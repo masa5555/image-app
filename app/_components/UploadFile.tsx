@@ -23,9 +23,9 @@ export function UploadFile() {
 
           const newBlob = await upload(file.name, file, {
             access: 'public',
-            handleUploadUrl: '/images',
+            handleUploadUrl: '/api/images',
           });
-          console.log({newBlob})
+          console.log({ newBlob })
 
           setBlob(newBlob);
         }}
